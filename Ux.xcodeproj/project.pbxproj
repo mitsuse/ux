@@ -11,6 +11,7 @@
 		2C6626A5204CF2D70072A15C /* _.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6626A4204CF2D70072A15C /* _.swift */; };
 		2C663533204CF66C0072A15C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C66301F204CF66A0072A15C /* RxCocoa.framework */; };
 		2C663535204CF66C0072A15C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C663021204CF66A0072A15C /* RxSwift.framework */; };
+		2C66397E204CF8900072A15C /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66397D204CF8900072A15C /* Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2C6626A4204CF2D70072A15C /* _.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _.swift; sourceTree = "<group>"; };
 		2C66301F204CF66A0072A15C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
 		2C663021204CF66A0072A15C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
+		2C66397D204CF8900072A15C /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				2C6626A4204CF2D70072A15C /* _.swift */,
+				2C66397D204CF8900072A15C /* Keyboard.swift */,
 			);
 			path = Ux;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C66397E204CF8900072A15C /* Keyboard.swift in Sources */,
 				2C6626A5204CF2D70072A15C /* _.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
