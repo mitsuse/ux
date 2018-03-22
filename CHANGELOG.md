@@ -1,7 +1,11 @@
 ## Unreleased
 
+## 0.2.2
 
-## 0.2.1
+- Fix the podspec.
+
+
+## 0.2.1 (NOT AVAILABLE, USE 0.2.2.)
 
 - Replace the height with zero on hiding keybaord.
 
