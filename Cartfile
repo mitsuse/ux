@@ -1,1 +1,2 @@
 git "git@github.com:ReactiveX/RxSwift.git" ~> 4.0
+git "git@github.com:mitsuse/screen-container.git" ~> 0.1

@@ -1,5 +1,8 @@
 ## Unreleased
 
+- Add a container view controller to switch the content based on its state.
+
+
 ## 0.2.2
 
 - Fix the podspec.
