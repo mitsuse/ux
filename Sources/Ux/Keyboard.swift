@@ -18,10 +18,10 @@ public enum Keyboard: ReactiveCompatible {
 
 extension Reactive where Base == Keyboard {
     public static var willShow: Observable<Keyboard.Update> { return notifications(.UIKeyboardWillShow).map(extract) }
-    public static var willHide: Observable<Keyboard.Update> { return notifications(.UIKeyboardWillHide).map(extract) }
+    public static var willHide: Observable<Keyboard.Update> { return notifications(.UIKeyboardWillHide).map(extract).map(zeroHeight) }
     public static var willChangeFrame: Observable<Keyboard.Update> { return notifications(.UIKeyboardWillChangeFrame).map(extract) }
     public static var didShow: Observable<Keyboard.Update> { return notifications(.UIKeyboardDidShow).map(extract) }
-    public static var didHide: Observable<Keyboard.Update> { return notifications(.UIKeyboardDidHide).map(extract) }
+    public static var didHide: Observable<Keyboard.Update> { return notifications(.UIKeyboardDidHide).map(extract).map(zeroHeight) }
     public static var didChangeFrame: Observable<Keyboard.Update> { return notifications(.UIKeyboardDidChangeFrame).map(extract) }
 }
 
@@ -42,5 +42,12 @@ private func extract(_ notification: Notification) -> Keyboard.Update {
     return Keyboard.Update(
         size: (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.size,
         duration: (notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+    )
+}
+
+private func zeroHeight(_ update: Keyboard.Update) -> Keyboard.Update {
+    return Keyboard.Update(
+        size: CGSize(width: update.size.width, height: 0),
+        duration: update.duration
     )
 }
