@@ -1,5 +1,8 @@
 ## Unreleased
 
+
+## 0.3.0
+
 - Add a container view controller to switch the content based on its state.
 
 
