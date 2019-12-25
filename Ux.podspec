@@ -14,6 +14,6 @@ Pod::Spec.new do |spec|
   spec.source_files = 'Sources/ux/**/*.swift'
   spec.ios.framework = 'UIKit'
   spec.dependency 'RxCocoa', '~> 5.0'
-  spec.dependency 'ScreenContainer', '~> 0.3'
-  spec.swift_version = '5.0'
+  spec.dependency 'ScreenContainer', '~> 0.4'
+  spec.swift_version = '5.1'
 end
