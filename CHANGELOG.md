@@ -1,5 +1,8 @@
 ## Unreleased
 
+- Support Swift Package Manager
+- Remove supports for Carthage and CocoaPods.
+
 
 ## 0.4.0
 
