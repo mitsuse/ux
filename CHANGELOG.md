@@ -1,5 +1,7 @@
 ## Unreleased
 
+- Update dependencies.
+
 
 ## 0.6.0
 
